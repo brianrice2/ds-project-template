@@ -1,11 +1,11 @@
-# Project template
+# Data Science Project Template
 
 An example repo structure for data science projects.
 
 <!-- START doctoc -->
 <!-- END doctoc -->
 
-## Directory structure
+## Directory structure :world_map:
 
 ```
 ├── README.md                         <- You are here!
@@ -38,6 +38,12 @@ An example repo structure for data science projects.
 ├── tests/                            <- Pytest unit tests
 │
 ├── Makefile                          <- Defines handy directives for automation
-└── run.py                            <- Orchestration function to simplify the execution of
-                                           one or more of the src scripts
+└── setup.py                          <- Make the repo into a package for easier imports
 ```
+
+## Setup :tent:
+
+The TOC Generator uses Github Actions to automatically trigger workflows. If you want to trigger actions, you'll need to configure a personal access token. See [this section](https://github.com/marketplace/actions/toc-generator#github_token) of the TOC Generator docs:
+
+1. [Generate a personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) with the public_repo or repo scope (repo is required for private repositories).
+1. [Save as ACCESS_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
