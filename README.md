@@ -51,6 +51,26 @@ An example repo structure for data science projects.
 
 ## Setup :tent:
 
+### Python virtual environment
+
+First, create a new conda environment with your desired name and Python version:
+
+```bash
+conda create --name myenv python=3.8
+```
+
+Then activate your environment:
+
+```bash
+conda activate myenv
+```
+
+If you install any new dependencies, export your new environment specs to `environment.yml`:
+
+```bash
+make conda-update
+```
+
 ### Install your package
 
 In order to make using the `src/` source code modules easier from any directory in the project, this project is a (minimal) package. Install the package via:
