@@ -2,6 +2,13 @@
 
 An example repo structure for data science projects.
 
+**So what does using this template offer?**
+
+- A consistent, organized structure to start from: Helps you quickly understand the structure of a project, new or old, and identify files of interest
+- Automation: Automatically update table of contents, run unit tests, set up organized pull requests, and more
+- Easier imports: Using a local package makes it easier to import source code modules
+- And more, discussed in [The Good Research Code Handbook](https://goodresearch.dev/index.html)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
@@ -78,11 +85,9 @@ In order to make using the `src/` source code modules easier from any directory 
 pip install -e .
 ```
 
-Inspired by [The Good Research Code Handbook](https://goodresearch.dev/index.html).
-
 ### Github Actions
 
-The TOC Generator uses Github Actions to automatically trigger workflows. If you want to trigger actions, you'll need to configure a personal access token. See [this section](https://github.com/marketplace/actions/toc-generator#github_token) of the TOC Generator docs:
+This repo uses Github Actions to automatically run workflows. If you want to trigger actions, you'll need to configure a personal access token. See [this section](https://github.com/marketplace/actions/toc-generator#github_token) of the TOC Generator docs:
 
 1. [Generate a personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) with the public_repo or repo scope (repo is required for private repositories).
-1. [Save as ACCESS_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
+1. [Save as ACCESS_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) in this repository's "Secrets" settings
