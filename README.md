@@ -2,8 +2,14 @@
 
 An example repo structure for data science projects.
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Directory structure :world_map:](#directory-structure-world_map)
+- [Setup :tent:](#setup-tent)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Directory structure :world_map:
 
