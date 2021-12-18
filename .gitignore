@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.py[cod]
+*.class
+.log
+*.egg-info/
+.env
+.venv
+env/
+venv/
+.mypy_cache/
+**/.ipynb_checkpoints/
+
+# R
+.Rproj.user
+
+# IDE
+.vscode/
+.idea/
+
+# Vim work/undo files
+*~
+
+# MacOS
+.DS_Store
+
+**/!.gitkeep
+
+# Local (private) configuration settings
+config/local
+
+# Data is usually too large for Github
+data/
+
