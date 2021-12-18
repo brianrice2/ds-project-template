@@ -2,12 +2,17 @@
 
 An example repo structure for data science projects.
 
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 ## Directory structure
 
 ```
 ├── README.md                         <- You are here!
 |
-├── config/                           <- Configuration files 
+├── .github/                          <- Automated configurations for Github 
+|
+├── config/                           <- Configuration files
 │   ├── local/                        <- Private configuration files and environment variable
 |   |                                      settings (not tracked)
 │   └── logging/                      <- Configuration of Python loggers
