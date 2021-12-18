@@ -8,6 +8,7 @@ An example repo structure for data science projects.
 
 - [Directory structure :world_map:](#directory-structure-world_map)
 - [Setup :tent:](#setup-tent)
+  - [Python virtual environment](#python-virtual-environment)
   - [Install your package](#install-your-package)
   - [Github Actions](#github-actions)
 
