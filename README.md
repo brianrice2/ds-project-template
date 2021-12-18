@@ -54,23 +54,21 @@ An example repo structure for data science projects.
 
 ### Python virtual environment
 
-First, create a new conda environment with your desired name and Python version:
+First, edit the starter environment details in `environment.yml` with your desired name and Python version.
+
+Then, create the new environment:
 
 ```bash
-conda create --name myenv python=3.8
+make conda-update
 ```
 
-Then activate your environment:
+Finally, activate your environment:
 
 ```bash
 conda activate myenv
 ```
 
-If you install any new dependencies, export your new environment specs to `environment.yml`:
-
-```bash
-make conda-update
-```
+If you install any new dependencies, simply run `make conda-update` again to update the environment specs. Happy coding!
 
 ### Install your package
 
