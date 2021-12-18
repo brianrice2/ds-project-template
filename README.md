@@ -43,6 +43,18 @@ An example repo structure for data science projects.
 
 ## Setup :tent:
 
+### Install your package
+
+In order to make using the `src/` source code modules easier from any directory in the project, this project is a (minimal) package. Install the package via:
+
+```bash
+pip install -e .
+```
+
+Inspired by [The Good Research Code Handbook](https://goodresearch.dev/index.html).
+
+### Github Actions
+
 The TOC Generator uses Github Actions to automatically trigger workflows. If you want to trigger actions, you'll need to configure a personal access token. See [this section](https://github.com/marketplace/actions/toc-generator#github_token) of the TOC Generator docs:
 
 1. [Generate a personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) with the public_repo or repo scope (repo is required for private repositories).
