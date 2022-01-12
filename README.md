@@ -53,6 +53,9 @@ An example repo structure for data science projects.
 │
 ├── tests/                            <- Pytest unit tests
 │
+├── environment.yml                   <- Environment specs for conda
+├── mypy.ini                          <- Mypy configuration
+├── pylintrc                          <- Pylint configuration
 ├── Makefile                          <- Defines handy directives for automation
 └── setup.py                          <- Make the repo into a package for easier imports
 ```
