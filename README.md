@@ -7,7 +7,7 @@ An example repo structure for data science projects.
 - A consistent, organized structure to start from: Helps you quickly understand the structure of a project, new or old, and identify files of interest
 - Automation: Automatically update table of contents, run unit tests, set up organized pull requests, and more
 - Easier imports: Using a local package makes it easier to import source code modules
-- And more, discussed in [The Good Research Code Handbook](https://goodresearch.dev/index.html)
+- And more, discussed in [The Good Research Code Handbook](https://goodresearch.dev/index.html) and [How to Set Up a Python Project For Automation and Collaboration](https://eugeneyan.com/writing/setting-up-python-project-for-automation-and-collaboration/)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -61,12 +61,12 @@ An example repo structure for data science projects.
 
 ### Python virtual environment
 
-First, edit the starter environment details in `environment.yml` with your desired name and Python version.
+First, edit the starter environment details in `environment.yml` with your desired environment name and Python version.
 
 Then, create the new environment:
 
 ```bash
-make conda-update
+make setup
 ```
 
 Finally, activate your environment:
@@ -75,7 +75,7 @@ Finally, activate your environment:
 conda activate myenv
 ```
 
-If you install any new dependencies, simply run `make conda-update` again to update the environment specs. Happy coding!
+If you install any new dependencies, either manually edit the `environment.yml` spec or run `make conda-export` to save all aspects of the current environment. Happy coding!
 
 ### Install your package
 
