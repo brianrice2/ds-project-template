@@ -61,7 +61,7 @@ An example repo structure for data science projects.
 
 ### Python virtual environment
 
-First, edit the starter environment details in `environment.yml` with your desired environment name and Python version.
+First, edit the starter environment details in `environment.yml` with your desired environment name and Python version. Be sure to also reflect the Python version in `.github/workflows/tests.yml`!
 
 Then, create the new environment:
 

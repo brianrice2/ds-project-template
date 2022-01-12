@@ -9,6 +9,20 @@ jobs:
         with:
           python-version: 3.8
           architecture: x64
-      - run: make setup
-      - run: make check
-      - run: bash <(curl -s https://codecov.io/bash)
+      - name: Setup
+        run: |
+          # $CONDA is an environment variable pointing to the root of the miniconda directory
+          $CONDA/bin/conda env update --file environment.yml --name base
+      - name: Test with pytest
+        run: |
+          conda install -c anaconda pytest
+          conda install -c conda-forge pytest-cov
+          $CONDA/bin/python -m pytest -v --cov=src --cov-report=term-missing
+      - name: Check types with mypy
+        run: |
+          conda install -c conda-forge mypy
+          $CONDA/bin/mypy src
+      - name: Lint with pylint
+        run: |
+          conda install -c anaconda pylint
+          $CONDA/bin/pylint src -j 4 --reports=y
